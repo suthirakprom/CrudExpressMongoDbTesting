@@ -20,12 +20,12 @@ app.set('view engine', 'ejs')               // #3 what is this?
 
 // load asset
 app.use('/css', express.static(path.resolve(__dirname, 'assets/css')))      // to make your css works here
-app.use('/img', express.static(path.resolve(__dirname, 'assets/img')))      
-app.use('/js', express.static(path.resolve(__dirname, 'assets/js')))      
+app.use('/img', express.static(path.resolve(__dirname, 'assets/img')))      // to make your img works here
+app.use('/js', express.static(path.resolve(__dirname, 'assets/js')))        // to make your js works here
 
 
 app.get('/', (req, res) => {
-    res.send('Crud Authentication')
+    res.render('index')
 })
 
 app.listen(PORT, () => {
