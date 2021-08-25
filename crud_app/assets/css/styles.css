@@ -71,6 +71,13 @@ a {
     width: 100%;
 }
 
+.color-header {
+    background-color: #06d6a0;
+    padding: 1em 0;
+    width: 100%;
+}
+
+
 #site-main {
     margin-top: 6em;
     font-family: 'Barlow', sans-serif;
